@@ -26,3 +26,21 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+//Route Hooks - Do not delete//
+	Route::view('tipoproductos', 'livewire.tipoproductos.index')->middleware('auth');
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
